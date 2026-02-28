@@ -1,73 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
-  * {
-    scroll-behavior: smooth;
-  }
+	* {
+		scroll-behavior: smooth;
+	}
 
-  body {
-    font-family: 'Nunito', sans-serif;
-    background-color: #E8A98C;
-    color: #2C2015;
-    overflow-x: hidden;
-  }
+	body {
+		font-family: "Poppins", sans-serif;
+		background-color: #e8a98c;
+		color: #2c2015;
+		overflow-x: hidden;
+	}
+
+	h1,
+	h2,
+	h3 {
+		font-family: "Fredoka One", cursive;
+	}
 }
 
 @layer components {
-  .section-label {
-    @apply font-handwriting text-sage-dark text-sm tracking-wider uppercase;
-  }
+	.section-label {
+		@apply font-body text-sage-dark text-sm tracking-wider uppercase font-semibold;
+	}
 
-  .section-title {
-    @apply font-display text-dark text-2xl md:text-3xl lg:text-4xl font-bold leading-tight;
-  }
+	.section-title {
+		@apply font-display text-dark text-2xl md:text-3xl lg:text-4xl font-bold leading-tight;
+	}
 
-  .polaroid {
-    @apply bg-white p-3 pb-8 shadow-lg rotate-0 transition-all duration-500;
-  }
+	.polaroid {
+		@apply bg-white p-3 pb-8 shadow-lg rotate-0 transition-all duration-500;
+	}
 
-  .polaroid:hover {
-    @apply shadow-2xl scale-105;
-    transform: scale(1.05) rotate(0deg) !important;
-  }
+	.polaroid:hover {
+		@apply shadow-2xl scale-105;
+		transform: scale(1.05) rotate(0deg) !important;
+	}
 
-  .photo-placeholder {
-    @apply bg-gray-200 w-full aspect-square flex items-center justify-center overflow-hidden;
-  }
+	.photo-placeholder {
+		@apply bg-gray-200 w-full aspect-square flex items-center justify-center overflow-hidden;
+	}
 
-  .wave-divider {
-    line-height: 0;
-    overflow: hidden;
-  }
+	.wave-divider {
+		line-height: 0;
+		overflow: hidden;
+	}
 
-  .animate-delay-100 { animation-delay: 100ms; }
-  .animate-delay-200 { animation-delay: 200ms; }
-  .animate-delay-300 { animation-delay: 300ms; }
-  .animate-delay-400 { animation-delay: 400ms; }
-  .animate-delay-500 { animation-delay: 500ms; }
-  .animate-delay-600 { animation-delay: 600ms; }
-  .animate-delay-700 { animation-delay: 700ms; }
-  .animate-delay-800 { animation-delay: 800ms; }
-  .animate-delay-900 { animation-delay: 900ms; }
-  .animate-delay-1000 { animation-delay: 1000ms; }
+	.animate-delay-100 {
+		animation-delay: 100ms;
+	}
+	.animate-delay-200 {
+		animation-delay: 200ms;
+	}
+	.animate-delay-300 {
+		animation-delay: 300ms;
+	}
+	.animate-delay-400 {
+		animation-delay: 400ms;
+	}
+	.animate-delay-500 {
+		animation-delay: 500ms;
+	}
+	.animate-delay-600 {
+		animation-delay: 600ms;
+	}
+	.animate-delay-700 {
+		animation-delay: 700ms;
+	}
+	.animate-delay-800 {
+		animation-delay: 800ms;
+	}
+	.animate-delay-900 {
+		animation-delay: 900ms;
+	}
+	.animate-delay-1000 {
+		animation-delay: 1000ms;
+	}
 }
 
 @layer utilities {
-  .opacity-0-start {
-    opacity: 0;
-  }
+	.opacity-0-start {
+		opacity: 0;
+	}
 }
 
 /* Scrollbar styling */
 ::-webkit-scrollbar {
-  width: 6px;
+	width: 6px;
 }
 ::-webkit-scrollbar-track {
-  background: #F2C5AB;
+	background: #f2c5ab;
 }
 ::-webkit-scrollbar-thumb {
-  background: #7D9B76;
-  border-radius: 3px;
+	background: #7d9b76;
+	border-radius: 3px;
 }

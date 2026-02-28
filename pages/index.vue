@@ -481,10 +481,10 @@ onMounted(() => {
             </p>
           </div>
 
-          <!-- Right: Couple photo with torn paper frame -->
+          <!-- Right: Couple photo -->
           <div class="hero-photo flex justify-center md:justify-end">
-            <div class="w-64 md:w-80">
-              <TornPaperFrame image-src="" image-alt="Us together forever" />
+            <div class="w-72 md:w-96 drop-shadow-2xl">
+              <img :src="'/images/hero.png'" alt="Us together forever" class="w-full h-auto object-contain" />
             </div>
           </div>
         </div>

@@ -40,8 +40,8 @@ export default {
         dark: '#2C2015'
       },
       fontFamily: {
-        display: ['Playfair Display', 'serif'],
-        body: ['Nunito', 'sans-serif'],
+        display: ['Fredoka One', 'cursive'],
+        body: ['Poppins', 'sans-serif'],
         handwriting: ['Caveat', 'cursive']
       },
       keyframes: {
