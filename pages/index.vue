@@ -230,10 +230,9 @@ onMounted(() => {
           <div class="food-featured-2 inline-block absolute top-4 right-48 md:right-72 z-10 rotate-[3deg]">
             <div
               class="polaroid w-36 md:w-44 cursor-pointer hover:rotate-0 hover:scale-105 transition-all duration-500">
-              <div class="photo-placeholder h-28 md:h-36 bg-gray-200 flex items-center justify-center">
-                <span class="text-3xl">🧋</span>
-              </div>
-              <p class="mt-2 font-handwriting text-xs text-center text-dark/60">We're made for this!</p>
+              <img :src="'/images/food-highlights/pempek.jpg'" alt="Pempek Beller Cafe Photo"
+                class="w-full h-28 md:h-36 object-contain object-bottom" style="mix-blend-mode: multiply;" />
+              <p class="mt-2 font-handwriting text-xs text-center text-dark/60">Pempek Beller Cafe</p>
             </div>
           </div>
           <div class="h-48 md:h-56" />
